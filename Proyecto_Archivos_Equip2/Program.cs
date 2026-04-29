@@ -10,7 +10,7 @@ namespace Proyecto_Archivos_Equip2
     {
         static void Main(string[] args)
         {
-
+            aca de que aca bien aca nmms
         }
     }
 }
