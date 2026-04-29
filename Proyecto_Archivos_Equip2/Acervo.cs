@@ -4,36 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace proyecto {
-    internal class Acervo {
-        //atributos
-        int numero;
-        string titulo;
-        string editorial;
+namespace Proyecto_Archivos_Equip2
+{
+    internal class Acervo
+    {
+        // Atributos
+        string tipo = "";
+        string titulo = "";
+        string disponible = "";
 
-        //propiedades
-        public int Numero {
-            get { return numero; }
-            set { numero = value; }
+        // Propiedades
+        public string Tipo
+        {
+            get { return tipo; }
+            set { tipo = value; }
         }
-        public string Titulo {
+        public string Titulo
+        {
             get { return titulo; }
             set { titulo = value; }
         }
-        public string Editorial {
-            get { return editorial; }
-            set { editorial = value; }
+        public string Disponible
+        {
+            get { return disponible; }
+            set { disponible = value; }
         }
 
-        //constructores
-        public Acervo() { }
-        public Acervo(int numero, string titulo, string editorial) {
-            Numero = numero;
-            Titulo = titulo;
-            Editorial = editorial;
+        // Constructores
+        // Vacio
+        public Acervo()
+        {
         }
-
-        //metodos
-
+        // Sobrecargado
+        public Acervo(string ti,string d, string t)
+        {
+            tipo = ti;
+            titulo = t;
+            disponible = d;
+        }
     }
 }
+
+       
+
+    
+
